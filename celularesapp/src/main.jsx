@@ -6,10 +6,10 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <section className='celulares'>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+    <Card name="iphone 15"/>
+    <Card name="moto"/>
+    <Card name="SAMSUM"/>
+    <Card name="xiaomi"/>
     </section>
 
   </React.StrictMode>,
