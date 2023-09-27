@@ -5,10 +5,12 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <section className='celulares'>
     <Card/>
     <Card/>
     <Card/>
     <Card/>
-<h1>hola2</h1>
+    </section>
+
   </React.StrictMode>,
 )

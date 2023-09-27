@@ -1,3 +1,12 @@
 .titulo{
     color: rgb(201, 196, 196);
 }
+.imagenCel{
+    width: 8rem;
+    height: 10rem;
+}
+.celulares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
