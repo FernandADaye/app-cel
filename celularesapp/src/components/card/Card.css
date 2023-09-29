@@ -4,16 +4,53 @@
 .imagenCel{
     width: 7rem;
     height: 10rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .card-style{
-    background-color: #424242;
+    background-color: #ffffff;
     flex-wrap: wrap;
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 3px 10px 0 rgb(70, 70, 70);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .text{
-    background-color: #424242;
+    background-color: #ffffff;
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+.textC{
+    background-color: #e0e0e0;
+    color: #000000;
+    padding: 1px;
+    margin: 10px;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.textT{
+    display: flex;
+    justify-content: start;
+    margin-right: 20px;
+
+}
+.titleIcon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.heartIcon{
+    font-size: x-large;
+    margin-right: 5px;
 
 }
