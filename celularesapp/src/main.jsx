@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Card from './components/card/Card'
 import Menu from './components/menu/Menu'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
 const telefonos= [
@@ -24,6 +25,7 @@ const telefonos= [
     title: 'Motorola',
     price:'20,000',
     mas:'celular Motorola caro y hermoso azul',
+    imagen: 'hola',
   },
   {
     title: 'Samsum',
@@ -38,8 +40,8 @@ telefonos.forEach(items=>{
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Menu/>
     <section className='celulares'>
-      <Menu/>
       {
       telefonos.map((item, index)=>{
         // eslint-disable-next-line react/jsx-key
