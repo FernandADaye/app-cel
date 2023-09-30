@@ -21,7 +21,7 @@ function handlerLike(){
             <div className='titleIcon'>
                 <h2 className='textT'>{props.item.title}</h2>
                 <div className='icons' onClick={handlerLike} >
-                    {like ? <FaRegHeart className='heartIcon' ></FaRegHeart> :<FaHeart className='heartIcon'></FaHeart> }
+                    {like ? <FaHeart className='heartIcon'></FaHeart> :<FaRegHeart className='heartIcon' ></FaRegHeart> }
             </div>
             </div>
             <p className='text'>{props.item.mas}</p>
