@@ -1,3 +1,4 @@
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -12,7 +13,7 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': [
+    "no-alert": "off"[
       'warn',
       { allowConstantExport: true },
     ],

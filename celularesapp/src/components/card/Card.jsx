@@ -17,7 +17,7 @@ function handlerLike(){
 }
     return(
         <div className='card-style'>            
-            <img className='imagenCel' src="https://m.media-amazon.com/images/I/51iJx7YWDOL.__AC_SY445_SX342_QL70_ML2_.jpg" alt="" />
+            <img className='imagenCel' src={props.item.image} alt="vista previa del celular" />
             <div className='titleIcon'>
                 <h2 className='textT'>{props.item.title}</h2>
                 <div className='icons' onClick={handlerLike} >
@@ -25,7 +25,7 @@ function handlerLike(){
             </div>
             </div>
             <p className='text'>{props.item.mas}</p>
-            <p className='text'><strong className='text'>Costo ${props.item.price}</strong></p>
+            <p className='text'><strong className='text'>Costo {props.item.price}</strong></p>
             <h4 className='textC'>  Contador: {counter}</h4>
             <button onClick={handlerConter} type="button" className="btn btn-dark">push me</button>
         </div>
