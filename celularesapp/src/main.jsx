@@ -9,11 +9,26 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Producto from './components/Producto/Producto';
 
 const router =createBrowserRouter([
   {
     path:"/",
-    element:<Home/>
+    element:<Home/>, 
+    children:[
+      {
+        path:"/",
+        element:<Producto/>
+      },
+      {
+        path:"/pantallas",
+        element:<><h1>pantallas </h1></>
+      },
+      {
+          path:"/about",
+          element:<> <h1>About us</h1></>
+        }
+    ]
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
