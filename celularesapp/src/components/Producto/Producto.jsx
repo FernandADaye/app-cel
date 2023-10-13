@@ -1,6 +1,8 @@
+/* eslint-disable */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from '../card/Card';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Producto() {
     
@@ -24,7 +26,11 @@ export default function Producto() {
         <section className='celulares'>
         {
         Producto.celulares.map((item, index) => {
-        return  <Card item={item} key={index} />
+        return(
+            <Link to="/detalle" state={item} >
+                    <Card item={item} key={index} />
+            </Link>
+        )
         })
         }
     </section>
@@ -33,3 +39,4 @@ export default function Producto() {
     }
         
     }
+

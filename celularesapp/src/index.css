@@ -8,6 +8,7 @@
 .celulares{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .celulares div{
     margin: 1rem;

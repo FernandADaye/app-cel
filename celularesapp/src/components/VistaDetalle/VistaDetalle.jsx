@@ -1,40 +1,36 @@
-/* eslint-disable */
+/*eslint-disable*/
 import React from 'react'
+import { useLocation } from 'react-router-dom';
+
 export default function VistaDetalle() {
+
+    const location= useLocation()
+    let item = location.state
+    console.log(item);
     return (
         <>   
-    <div>VistaDetalle</div>
     <table className="table">
     <thead>
     <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
+        <th scope="col">{item.title} </th>
+        <th scope="col">Fecha De Envio</th>
+        <th scope="col">Costo</th>
         <th scope="col">Handle</th>
     </tr>
     </thead>
     <tbody>
     <tr>
         <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
+        <td>{randomDate} </td>
+        <td>{item.price}</td>
         <td>@mdo</td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
     </tr>
     </tbody>
 </table>
     </>
-
-
+    
     )
 }
+
+
+console.log(location.state);

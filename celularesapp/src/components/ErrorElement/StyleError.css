@@ -1,0 +1,19 @@
+img{
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    border-radius: 30px;
+}
+.memeError{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;    
+}
+h1{
+    margin:2rem;
+}
+h6{
+    margin:1rem;
+}

@@ -10,11 +10,14 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Producto from './components/Producto/Producto';
+import VistaDetalle from './components/VistaDetalle/VistaDetalle';
+import ErrorElement from './components/ErrorElement/ErrorElement';
 
 const router =createBrowserRouter([
   {
     path:"/",
     element:<Home/>, 
+    errorElement:<ErrorElement/> ,
     children:[
       {
         path:"/",
@@ -27,6 +30,10 @@ const router =createBrowserRouter([
       {
           path:"/about",
           element:<> <h1>About us</h1></>
+        },
+        {
+          path:"/detalle",
+          element:<VistaDetalle/>
         }
     ]
   }

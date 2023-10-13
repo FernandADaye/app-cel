@@ -1,3 +1,4 @@
+/* eslint-disable */
 import './Card.css'
 import { useState } from 'react'
 import { FaRegHeart } from "react-icons/fa";
