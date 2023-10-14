@@ -1,36 +1,45 @@
 .titulo{
-    color: rgb(201, 196, 196);
+    color: rgb(243, 243, 243);
+}
+.titleIcon{
+    background-color: #bdbdbd;
 }
 .imagenCel{
-    width: 7rem;
+    width: 8rem;
     height: 10rem;
     justify-content: center;
     display: flex;
     align-items: center;
 }
 .card-style{
-    background-color: #ffffff;
+    background-color: #bdbdbd;
     flex-wrap: wrap;
     margin-top: 2rem;
-    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 3px 10px 0 rgb(70, 70, 70);
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
 }
-.text{
-    background-color: #ffffff;
+.textT{
+    background-color: #bdbdbd;
     display: flex;
     color: #000000;
     justify-content: center;
     align-items: center;
 }
+.icons{
+    background-color: #bdbdbd;
+}
+.heartIcon{
+    background-color: #bdbdbd;
+
+}
 .textC{
-    background-color: #e0e0e0;
     color: #000000;
     padding: 1px;
     margin: 10px;
@@ -55,4 +64,11 @@
     font-size: x-large;
     margin-right: 5px;
 
+}
+.enlaceBot{
+    background-color: #25252500;
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 1rem ;
+    font-size: medium;
 }

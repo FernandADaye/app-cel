@@ -3,6 +3,8 @@ import './Card.css'
 import { useState } from 'react'
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 
 function Card(props){
@@ -27,9 +29,12 @@ function handlerLike(){
             </div>
             <p className='text'>{props.item.mas}</p>
             <p className='text'><strong className='text'>Costo {props.item.price}</strong></p>
-            <h4 className='textC'>  Contador: {counter}</h4>
-            <button onClick={handlerConter} type="button" className="btn btn-dark">push me</button>
+            {/* <h4 className='textC'>  Contador: {counter}</h4> */}
+            <button onClick={handlerConter} type="button" className="btn btn-dark" > <Link className ="enlaceBot" to="/detalle" state={props.item} >Detalles</Link>
+</button>
+
         </div>
+        
     )
 }
 export default Card

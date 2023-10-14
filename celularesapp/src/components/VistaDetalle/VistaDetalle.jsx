@@ -13,15 +13,15 @@ export default function VistaDetalle() {
     <thead>
     <tr>
         <th scope="col">{item.title} </th>
-        <th scope="col">Fecha De Envio</th>
+        <th scope="col">Detalles</th>
         <th scope="col">Costo</th>
         <th scope="col">Handle</th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <th scope="row">1</th>
-        <td>{randomDate} </td>
+        <th scope="row">Nuevo</th>
+        <td>{item.description} </td>
         <td>{item.price}</td>
         <td>@mdo</td>
     </tr>
