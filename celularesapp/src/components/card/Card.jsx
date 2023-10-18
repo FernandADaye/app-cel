@@ -19,6 +19,7 @@ function handlerLike(){
     setLike(!like)
 }
     return(
+        <>
         <div className='card-style'>            
             <img className='imagenCel' src={props.item.image} alt="vista previa del celular" />
             <div className='titleIcon'>
@@ -34,7 +35,7 @@ function handlerLike(){
 </button>
 
         </div>
-        
+        </>
     )
 }
 export default Card
